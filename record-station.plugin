@@ -1,13 +1,14 @@
-[RB Plugin]
-Loader=python
+[Plugin]
+Loader=python3
 Module=record-station
-IAge=1
+IAge=2
+Depends=rb
 Name=Record radio stations
 Name[de]=Internetradio aufnehmen
 Name[fr]=Enregistrer des stations radio
 Description=Record an internet radio station via the toolbar or context-menu
 Description[de]=Internetradio-Stationen über das Kontextmenü oder die Toolbar aufnehmen
 Description[fr]=Enregistrer une station radio Internet via la barre d'outils ou le menu contextuel.
-Authors=Jannik Heller <scrawl@baseoftrash.de>\nPhobosK <phobosk@kbfx.net>
-Copyright=Copyright © 2008 Jannik Heller\nCopyright © 2009 PhobosK
-Website=http://scrawl.bplaced.net/projects/record-station
+Authors=Jannik Heller <scrawl@baseoftrash.de>\nPhobosK <phobosk@kbfx.net>\nPhilippe Bourdin
+Copyright=Copyright © 2008 Jannik Heller\nCopyright © 2009 PhobosK\nCopyright © 2018 Philippe Bourdin
+#Website=

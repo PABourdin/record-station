@@ -1,37 +1,37 @@
 <?xml version="1.0"?>
-<glade-interface>
-  <!-- interface-requires gtk+ 2.16 -->
+<interface>
+  <!-- interface-requires gtk+ 3.0 -->
   <!-- interface-naming-policy project-wide -->
-  <widget class="GtkWindow" id="preferences">
+  <object class="GtkWindow" id="preferences">
     <property name="border_width">8</property>
     <property name="window_position">center-on-parent</property>
     <property name="type_hint">dialog</property>
     <child>
-      <widget class="GtkVBox" id="vbox1">
+      <object class="GtkVBox" id="vbox1">
         <property name="visible">True</property>
         <property name="orientation">vertical</property>
         <child>
-          <widget class="GtkNotebook" id="notebook1">
+          <object class="GtkNotebook" id="notebook1">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <child>
-              <widget class="GtkVBox" id="general_vbox">
+              <object class="GtkVBox" id="general_vbox">
                 <property name="visible">True</property>
                 <property name="border_width">12</property>
                 <property name="orientation">vertical</property>
                 <property name="spacing">18</property>
                 <child>
-                  <widget class="GtkVBox" id="vbox14">
+                  <object class="GtkVBox" id="vbox14">
                     <property name="visible">True</property>
                     <property name="orientation">vertical</property>
                     <property name="spacing">6</property>
                     <child>
-                      <widget class="GtkLabel" id="browser_views_label">
+                      <object class="GtkLabel" id="browser_views_label">
                         <property name="visible">True</property>
                         <property name="xalign">0</property>
                         <property name="label" translatable="yes">&lt;b&gt;Folder&lt;/b&gt;</property>
                         <property name="use_markup">True</property>
-                      </widget>
+                      </object>
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">False</property>
@@ -39,13 +39,13 @@
                       </packing>
                     </child>
                     <child>
-                      <widget class="GtkHBox" id="hbox1">
+                      <object class="GtkHBox" id="hbox1">
                         <property name="visible">True</property>
                         <child>
-                          <widget class="GtkLabel" id="label4">
+                          <object class="GtkLabel" id="label4">
                             <property name="visible">True</property>
                             <property name="xpad">8</property>
-                          </widget>
+                          </object>
                           <packing>
                             <property name="expand">False</property>
                             <property name="fill">False</property>
@@ -53,20 +53,20 @@
                           </packing>
                         </child>
                         <child>
-                          <widget class="GtkVBox" id="vbox8">
+                          <object class="GtkVBox" id="vbox8">
                             <property name="visible">True</property>
                             <property name="orientation">vertical</property>
                             <child>
-                              <widget class="GtkHBox" id="hbox2">
+                              <object class="GtkHBox" id="hbox2">
                                 <property name="visible">True</property>
                                 <child>
-                                  <widget class="GtkCheckButton" id="default_folder_checkbox">
+                                  <object class="GtkCheckButton" id="default_folder_checkbox">
                                     <property name="label" translatable="yes">Default folder</property>
                                     <property name="visible">True</property>
                                     <property name="can_focus">True</property>
                                     <property name="receives_default">False</property>
                                     <property name="draw_indicator">True</property>
-                                  </widget>
+                                  </object>
                                   <packing>
                                     <property name="expand">False</property>
                                     <property name="fill">False</property>
@@ -74,47 +74,47 @@
                                   </packing>
                                 </child>
                                 <child>
-                                  <widget class="GtkFileChooserButton" id="folder_choose_button">
+                                  <object class="GtkFileChooserButton" id="folder_choose_button">
                                     <property name="visible">True</property>
                                     <property name="action">select-folder</property>
                                     <property name="title" translatable="yes"></property>
-                                  </widget>
+                                  </object>
                                   <packing>
                                     <property name="expand">False</property>
                                     <property name="fill">False</property>
                                     <property name="position">1</property>
                                   </packing>
                                 </child>
-                              </widget>
+                              </object>
                               <packing>
                                 <property name="position">0</property>
                               </packing>
                             </child>
                             <child>
-                              <widget class="GtkCheckButton" id="subfolder_checkbox">
+                              <object class="GtkCheckButton" id="subfolder_checkbox">
                                 <property name="label" translatable="yes">Create a subfolder for each radio station</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
                                 <property name="draw_indicator">True</property>
-                              </widget>
+                              </object>
                               <packing>
                                 <property name="position">1</property>
                               </packing>
                             </child>
-                          </widget>
+                          </object>
                           <packing>
                             <property name="position">1</property>
                           </packing>
                         </child>
-                      </widget>
+                      </object>
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">False</property>
                         <property name="position">1</property>
                       </packing>
                     </child>
-                  </widget>
+                  </object>
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">False</property>
@@ -122,16 +122,16 @@
                   </packing>
                 </child>
                 <child>
-                  <widget class="GtkVBox" id="vbox2">
+                  <object class="GtkVBox" id="vbox2">
                     <property name="visible">True</property>
                     <property name="orientation">vertical</property>
                     <child>
-                      <widget class="GtkLabel" id="browser_views_label1">
+                      <object class="GtkLabel" id="browser_views_label1">
                         <property name="visible">True</property>
                         <property name="xalign">0</property>
                         <property name="label" translatable="yes">&lt;b&gt;Recording&lt;/b&gt;</property>
                         <property name="use_markup">True</property>
-                      </widget>
+                      </object>
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">False</property>
@@ -139,13 +139,13 @@
                       </packing>
                     </child>
                     <child>
-                      <widget class="GtkHBox" id="hbox3">
+                      <object class="GtkHBox" id="hbox3">
                         <property name="visible">True</property>
                         <child>
-                          <widget class="GtkLabel" id="label5">
+                          <object class="GtkLabel" id="label5">
                             <property name="visible">True</property>
                             <property name="xpad">8</property>
-                          </widget>
+                          </object>
                           <packing>
                             <property name="expand">False</property>
                             <property name="fill">False</property>
@@ -153,17 +153,17 @@
                           </packing>
                         </child>
                         <child>
-                          <widget class="GtkVBox" id="vbox3">
+                          <object class="GtkVBox" id="vbox3">
                             <property name="visible">True</property>
                             <property name="orientation">vertical</property>
                             <child>
-                              <widget class="GtkCheckButton" id="delete_incomplete_checkbox">
+                              <object class="GtkCheckButton" id="delete_incomplete_checkbox">
                                 <property name="label" translatable="yes">Automatically delete incomplete songs</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
                                 <property name="draw_indicator">True</property>
-                              </widget>
+                              </object>
                               <packing>
                                 <property name="expand">False</property>
                                 <property name="fill">False</property>
@@ -171,34 +171,34 @@
                               </packing>
                             </child>
                             <child>
-                              <widget class="GtkCheckButton" id="single_file_checkbox">
+                              <object class="GtkCheckButton" id="single_file_checkbox">
                                 <property name="label" translatable="yes">Save to single file</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
                                 <property name="draw_indicator">True</property>
-                              </widget>
+                              </object>
                               <packing>
                                 <property name="expand">False</property>
                                 <property name="fill">False</property>
                                 <property name="position">1</property>
                               </packing>
                             </child>
-                          </widget>
+                          </object>
                           <packing>
                             <property name="expand">False</property>
                             <property name="fill">False</property>
                             <property name="position">1</property>
                           </packing>
                         </child>
-                      </widget>
+                      </object>
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">False</property>
                         <property name="position">1</property>
                       </packing>
                     </child>
-                  </widget>
+                  </object>
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">False</property>
@@ -206,16 +206,16 @@
                   </packing>
                 </child>
                 <child>
-                  <widget class="GtkVBox" id="vbox4">
+                  <object class="GtkVBox" id="vbox4">
                     <property name="visible">True</property>
                     <property name="orientation">vertical</property>
                     <child>
-                      <widget class="GtkLabel" id="browser_views_label2">
+                      <object class="GtkLabel" id="browser_views_label2">
                         <property name="visible">True</property>
                         <property name="xalign">0</property>
                         <property name="label" translatable="yes">&lt;b&gt;Interface&lt;/b&gt;</property>
                         <property name="use_markup">True</property>
-                      </widget>
+                      </object>
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">False</property>
@@ -223,13 +223,13 @@
                       </packing>
                     </child>
                     <child>
-                      <widget class="GtkHBox" id="hbox4">
+                      <object class="GtkHBox" id="hbox4">
                         <property name="visible">True</property>
                         <child>
-                          <widget class="GtkLabel" id="label6">
+                          <object class="GtkLabel" id="label6">
                             <property name="visible">True</property>
                             <property name="xpad">8</property>
-                          </widget>
+                          </object>
                           <packing>
                             <property name="expand">False</property>
                             <property name="fill">False</property>
@@ -237,48 +237,48 @@
                           </packing>
                         </child>
                         <child>
-                          <widget class="GtkVBox" id="vbox5">
+                          <object class="GtkVBox" id="vbox5">
                             <property name="visible">True</property>
                             <property name="orientation">vertical</property>
                             <child>
-                              <widget class="GtkCheckButton" id="show_checkbox">
+                              <object class="GtkCheckButton" id="show_checkbox">
                                 <property name="label" translatable="yes">Show the record manager when recording starts</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
                                 <property name="draw_indicator">True</property>
-                              </widget>
+                              </object>
                               <packing>
                                 <property name="position">0</property>
                               </packing>
                             </child>
                             <child>
-                              <widget class="GtkCheckButton" id="notify_checkbox">
+                              <object class="GtkCheckButton" id="notify_checkbox">
                                 <property name="label" translatable="yes">Notify on song change</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
                                 <property name="draw_indicator">True</property>
-                              </widget>
+                              </object>
                               <packing>
                                 <property name="position">1</property>
                               </packing>
                             </child>
-                          </widget>
+                          </object>
                           <packing>
                             <property name="expand">False</property>
                             <property name="fill">False</property>
                             <property name="position">1</property>
                           </packing>
                         </child>
-                      </widget>
+                      </object>
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">False</property>
                         <property name="position">1</property>
                       </packing>
                     </child>
-                  </widget>
+                  </object>
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">False</property>
@@ -286,16 +286,16 @@
                   </packing>
                 </child>
                 <child>
-                  <widget class="GtkVBox" id="vbox6">
+                  <object class="GtkVBox" id="vbox6">
                     <property name="visible">True</property>
                     <property name="orientation">vertical</property>
                     <child>
-                      <widget class="GtkLabel" id="browser_views_label3">
+                      <object class="GtkLabel" id="browser_views_label3">
                         <property name="visible">True</property>
                         <property name="xalign">0</property>
                         <property name="label" translatable="yes">&lt;b&gt;Columns&lt;/b&gt;</property>
                         <property name="use_markup">True</property>
-                      </widget>
+                      </object>
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">False</property>
@@ -303,13 +303,13 @@
                       </packing>
                     </child>
                     <child>
-                      <widget class="GtkHBox" id="hbox5">
+                      <object class="GtkHBox" id="hbox5">
                         <property name="visible">True</property>
                         <child>
-                          <widget class="GtkLabel" id="label7">
+                          <object class="GtkLabel" id="label7">
                             <property name="visible">True</property>
                             <property name="xpad">8</property>
-                          </widget>
+                          </object>
                           <packing>
                             <property name="expand">False</property>
                             <property name="fill">False</property>
@@ -317,17 +317,17 @@
                           </packing>
                         </child>
                         <child>
-                          <widget class="GtkVBox" id="vbox7">
+                          <object class="GtkVBox" id="vbox7">
                             <property name="visible">True</property>
                             <property name="orientation">vertical</property>
                             <child>
-                              <widget class="GtkCheckButton" id="stream_checkbox">
+                              <object class="GtkCheckButton" id="stream_checkbox">
                                 <property name="label" translatable="yes">Stream</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
                                 <property name="draw_indicator">True</property>
-                              </widget>
+                              </object>
                               <packing>
                                 <property name="expand">False</property>
                                 <property name="fill">False</property>
@@ -335,13 +335,13 @@
                               </packing>
                             </child>
                             <child>
-                              <widget class="GtkCheckButton" id="current_title_checkbox">
+                              <object class="GtkCheckButton" id="current_title_checkbox">
                                 <property name="label" translatable="yes">Current title</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
                                 <property name="draw_indicator">True</property>
-                              </widget>
+                              </object>
                               <packing>
                                 <property name="expand">False</property>
                                 <property name="fill">False</property>
@@ -349,13 +349,13 @@
                               </packing>
                             </child>
                             <child>
-                              <widget class="GtkCheckButton" id="folder_checkbox">
+                              <object class="GtkCheckButton" id="folder_checkbox">
                                 <property name="label" translatable="yes">Folder</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
                                 <property name="draw_indicator">True</property>
-                              </widget>
+                              </object>
                               <packing>
                                 <property name="expand">False</property>
                                 <property name="fill">False</property>
@@ -363,72 +363,71 @@
                               </packing>
                             </child>
                             <child>
-                              <widget class="GtkCheckButton" id="recorded_checkbox">
+                              <object class="GtkCheckButton" id="recorded_checkbox">
                                 <property name="label" translatable="yes">Recorded</property>
                                 <property name="visible">True</property>
                                 <property name="can_focus">True</property>
                                 <property name="receives_default">False</property>
                                 <property name="draw_indicator">True</property>
-                              </widget>
+                              </object>
                               <packing>
                                 <property name="expand">False</property>
                                 <property name="fill">False</property>
                                 <property name="position">3</property>
                               </packing>
                             </child>
-                          </widget>
+                          </object>
                           <packing>
                             <property name="position">1</property>
                           </packing>
                         </child>
-                      </widget>
+                      </object>
                       <packing>
                         <property name="position">1</property>
                       </packing>
                     </child>
-                  </widget>
+                  </object>
                   <packing>
                     <property name="position">3</property>
                   </packing>
                 </child>
-              </widget>
+              </object>
             </child>
-            <child>
-              <widget class="GtkLabel" id="nb_label_1">
+            <child type="tab">
+              <object class="GtkLabel" id="nb_label_1">
                 <property name="visible">True</property>
                 <property name="label" translatable="yes">General</property>
-              </widget>
+              </object>
               <packing>
                 <property name="tab_fill">False</property>
-                <property name="type">tab</property>
               </packing>
             </child>
             <child>
-              <widget class="GtkVBox" id="vbox10">
+              <object class="GtkVBox" id="vbox10">
                 <property name="visible">True</property>
                 <property name="orientation">vertical</property>
                 <child>
-                  <widget class="GtkTreeView" id="treeview1">
+                  <object class="GtkTreeView" id="treeview1">
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
-                  </widget>
+                  </object>
                   <packing>
                     <property name="position">0</property>
                   </packing>
                 </child>
                 <child>
-                  <widget class="GtkHButtonBox" id="hbuttonbox1">
+                  <object class="GtkHButtonBox" id="hbuttonbox1">
                     <property name="visible">True</property>
                     <property name="spacing">4</property>
                     <property name="layout_style">start</property>
                     <child>
-                      <widget class="GtkButton" id="add_button">
+                      <object class="GtkButton" id="add_button">
                         <property name="label" translatable="yes">gtk-add</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
                         <property name="use_stock">True</property>
-                      </widget>
+                      </object>
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">False</property>
@@ -436,13 +435,13 @@
                       </packing>
                     </child>
                     <child>
-                      <widget class="GtkButton" id="remove_button">
+                      <object class="GtkButton" id="remove_button">
                         <property name="label" translatable="yes">gtk-remove</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
                         <property name="use_stock">True</property>
-                      </widget>
+                      </object>
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">False</property>
@@ -450,55 +449,54 @@
                       </packing>
                     </child>
                     <child>
-                      <widget class="GtkButton" id="edit_button">
+                      <object class="GtkButton" id="edit_button">
                         <property name="label" translatable="yes">gtk-edit</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">True</property>
                         <property name="use_stock">True</property>
-                      </widget>
+                      </object>
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">False</property>
                         <property name="position">2</property>
                       </packing>
                     </child>
-                  </widget>
+                  </object>
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">False</property>
                     <property name="position">1</property>
                   </packing>
                 </child>
-              </widget>
+              </object>
               <packing>
                 <property name="position">1</property>
               </packing>
             </child>
-            <child>
-              <widget class="GtkLabel" id="nb_label_2">
+            <child type="tab">
+              <object class="GtkLabel" id="nb_label_2">
                 <property name="visible">True</property>
                 <property name="label" translatable="yes">Planned recordings</property>
-              </widget>
+              </object>
               <packing>
                 <property name="position">1</property>
                 <property name="tab_fill">False</property>
-                <property name="type">tab</property>
               </packing>
             </child>
             <child>
-              <widget class="GtkVBox" id="vbox11">
+              <object class="GtkVBox" id="vbox11">
                 <property name="visible">True</property>
                 <property name="orientation">vertical</property>
                 <child>
-                  <widget class="GtkHBox" id="hbox7">
+                  <object class="GtkHBox" id="hbox7">
                     <property name="visible">True</property>
                     <child>
-                      <widget class="GtkImage" id="image1">
+                      <object class="GtkImage" id="image1">
                         <property name="visible">True</property>
                         <property name="stock">gtk-dialog-info</property>
                         <property name="icon-size">6</property>
-                      </widget>
+                      </object>
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">False</property>
@@ -507,19 +505,19 @@
                       </packing>
                     </child>
                     <child>
-                      <widget class="GtkLabel" id="label1">
+                      <object class="GtkLabel" id="label1">
                         <property name="visible">True</property>
                         <property name="label" translatable="yes">&lt;i&gt;To improve compability with some streams (including mms:// streams), you can use mplayer as a backend instead of streamripper. However, track splitting is not supported.&lt;/i&gt;</property>
                         <property name="use_markup">True</property>
                         <property name="wrap">True</property>
-                      </widget>
+                      </object>
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">False</property>
                         <property name="position">1</property>
                       </packing>
                     </child>
-                  </widget>
+                  </object>
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">False</property>
@@ -528,16 +526,16 @@
                   </packing>
                 </child>
                 <child>
-                  <widget class="GtkHBox" id="hbox6">
+                  <object class="GtkHBox" id="hbox6">
                     <property name="visible">True</property>
                     <child>
-                      <widget class="GtkCheckButton" id="use_mplayer_cb">
+                      <object class="GtkCheckButton" id="use_mplayer_cb">
                         <property name="label" translatable="yes">Use MPlayer for these streams:</property>
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="receives_default">False</property>
                         <property name="draw_indicator">True</property>
-                      </widget>
+                      </object>
                       <packing>
                         <property name="expand">False</property>
                         <property name="fill">False</property>
@@ -545,68 +543,67 @@
                       </packing>
                     </child>
                     <child>
-                      <widget class="GtkEntry" id="regexp_entry">
+                      <object class="GtkEntry" id="regexp_entry">
                         <property name="visible">True</property>
                         <property name="can_focus">True</property>
                         <property name="invisible_char">&#x25CF;</property>
                         <property name="text" translatable="yes">mms://*</property>
-                      </widget>
+                      </object>
                       <packing>
                         <property name="position">1</property>
                       </packing>
                     </child>
-                  </widget>
+                  </object>
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">False</property>
                     <property name="position">1</property>
                   </packing>
                 </child>
-              </widget>
+              </object>
               <packing>
                 <property name="position">2</property>
                 <property name="tab_fill">False</property>
               </packing>
             </child>
-            <child>
-              <widget class="GtkLabel" id="compability_label">
+            <child type="tab">
+              <object class="GtkLabel" id="compability_label">
                 <property name="visible">True</property>
                 <property name="label" translatable="yes">Compability</property>
-              </widget>
+              </object>
               <packing>
                 <property name="position">2</property>
                 <property name="tab_fill">False</property>
-                <property name="type">tab</property>
               </packing>
             </child>
-          </widget>
+          </object>
           <packing>
             <property name="position">0</property>
           </packing>
         </child>
         <child>
-          <widget class="GtkVBox" id="vbox9">
+          <object class="GtkVBox" id="vbox9">
             <property name="visible">True</property>
             <property name="orientation">vertical</property>
             <child>
-              <widget class="GtkLabel" id="label2">
+              <object class="GtkLabel" id="label2">
                 <property name="visible">True</property>
-              </widget>
+              </object>
               <packing>
                 <property name="position">0</property>
               </packing>
             </child>
             <child>
-              <widget class="GtkHButtonBox" id="hbuttonbox2">
+              <object class="GtkHButtonBox" id="hbuttonbox2">
                 <property name="visible">True</property>
                 <child>
-                  <widget class="GtkButton" id="cancel_button">
+                  <object class="GtkButton" id="cancel_button">
                     <property name="label" translatable="yes">gtk-cancel</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="use_stock">True</property>
-                  </widget>
+                  </object>
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">False</property>
@@ -614,34 +611,34 @@
                   </packing>
                 </child>
                 <child>
-                  <widget class="GtkButton" id="ok_button">
+                  <object class="GtkButton" id="ok_button">
                     <property name="label" translatable="yes">gtk-ok</property>
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="receives_default">True</property>
                     <property name="use_stock">True</property>
-                  </widget>
+                  </object>
                   <packing>
                     <property name="expand">False</property>
                     <property name="fill">False</property>
                     <property name="position">2</property>
                   </packing>
                 </child>
-              </widget>
+              </object>
               <packing>
                 <property name="expand">False</property>
                 <property name="fill">False</property>
                 <property name="position">1</property>
               </packing>
             </child>
-          </widget>
+          </object>
           <packing>
             <property name="expand">False</property>
             <property name="fill">False</property>
             <property name="position">1</property>
           </packing>
         </child>
-      </widget>
+      </object>
     </child>
-  </widget>
-</glade-interface>
+  </object>
+</interface>
