@@ -1244,21 +1244,19 @@ class MPlayerProcess(threading.Thread):
 				self.song_size = os.path.getsize(self.directory + "/" + self.filename) / 1000
 			except:
 				self.song_size = 0
-			line = ""
+			line = bytearray()
 			while True:
 				try:
-					char = str(pout.read(1), encoding='UTF-8')
+					char = pout.read(1)
 				except:
 					break
+				if char == None:
+					break
+				if char == b'' or char == b'\n' or char == b'\r' or char == b'\0':
+					break
+				line.extend(char)
 
-				if char == None or char == "":
-					break
-
-				if char == "\n":
-					break
-				if char == "\r":
-					break
-				line = line+char
+			line = str(line, encoding='utf-8')
 		# process has terminated, reload_info no longer needed
 		self.killed = True
 		return False
@@ -1332,28 +1330,25 @@ class StreamRipperProcess(threading.Thread):
 	def reload_info(self):
 		pout = self.process.stdout
 		while self.process.poll()==None:
-			line = ""
-
+			line = bytearray()
 			while True:
 				try:
-					char = str(pout.read(1), encoding='UTF-8')
+					char = pout.read(1)
 				except:
 					break
-
-				if char == None or char == "":
+				if char == None:
 					break
-
-				if char == "\n":
+				if char == b'' or char == b'\n' or char == b'\r' or char == b'\0':
 					break
-				if char == "\r":
-					break
-				line = line+char
+				line.extend(char)
 
+			line = str(line, encoding='utf-8')
 			if line.startswith("relay port"):
 				self.relay_port = line.split(":")[1].strip()
 			if line.startswith("stream"):
 				self.stream_name = line.split(":")[1].strip()
 			if line.startswith("[ripping") or line.startswith("[skipping"):
+				# example: line = "[skipping...   ] Johannes Brahms - Sonate pour violon et piano, no  [   48kb]"
 				if not(self.song_info == line[17:-10]):
 					# when song info changes
 					if self.show_notifications:
